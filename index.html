@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./all.min.css" />
+
+    <script src="https://kit.fontawesome.com/446a6898ff.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav>
+      <h2 id="logo">Maria Simeon-Godfrey</h2>
+      <ul class="navigation-items">
+        <li class="navigation-item"><a href="#about-me">About Me</a></li>
+        <li class="navigation-item"><a href="#projects">Projects</a></li>
+        <li class="navigation-item"><a href="#skills">Skills</a></li>
+        <li class="navigation-item"><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="about-me">
+        <div class="about-me-container">
+          <div class="about-me-text-container">
+            <h2>About Me</h2>
+            <p>
+              Hi! I'm Maria Simeon-Godfrey, a passionate software developer with a strong focus on problem-solving 
+              and innovative solutions. I brings a wealth of experience in financial applications, enterprise integrations, 
+              and front-end development, particularly with JavaScript frameworks and libraries.
+            </p>
+            <p>
+              My dedication to my craft is evident in her ability to transform complex ideas into 
+              user-friendly applications. I am a collaborative team player, always eager to contribute to the success of my team.
+            </p>
+            <p>
+              My enthusiasm for technology is contagious, and I am constantly exploring new tools and techniques to stay ahead of the curve. 
+              I am committed to delivering high-quality software solutions that meet the needs of the clients and users.
+            </p>
+            <p>
+              Fun fact! I've been programing for
+              <span id="time-container">0</span> seconds!
+            </p>
+          </div>
+          <img
+            src="images/Maria.jpg"
+            alt="A photo of Maria"
+            class="portrait"
+          />
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <details class="project">
+          <summary class="project-title">
+            <h3>Website Development</h3>
+          </summary>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Diagram_for_the_computation_of_Bernoulli_numbers.jpg/220px-Diagram_for_the_computation_of_Bernoulli_numbers.jpg"
+            alt="Lovelace's diagram from note G, the first published computer
+          algorithm"
+            class="project-image"
+          />
+          <p class="project-description">
+            The world's first computer program for computing Bernoulli numbers.
+          </p>
+        </details>
+        <details class="project">
+          <summary class="project-title">
+            <h3>Mixed Messages</h3>
+          </summary>
+          <img
+            src="https://images2.minutemediacdn.com/image/upload/c_fit,f_auto,fl_lossy,q_auto,w_728/v1555925585/shape/mentalfloss/analyticalmachine_babbage_london.jpg?itok=5vRTwQjb"
+            alt="An original model of part of the Analytical Engine"
+            class="project-image"
+          />
+          <p class="project-description">
+            I helped Charles Babbage on topics ranging from math to computation
+            that helped the development of the Analytical Engine.
+          </p>
+        </details>
+        <details class="project">
+          <summary class="project-title">
+            <h3>E-Learning</h3>
+          </summary>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Ada_Mascot_with_slogan.svg/220px-Ada_Mascot_with_slogan.svg.png"
+            alt='Ada mascot, a black and cobalt blue hummingbird, flying above the
+          slogan "Time-tested, safe and secure"'
+            class="project-image"
+          />
+          <p class="project-description">
+            My work inspired the United States Department of Defense to name
+            their new programming language after me.
+          </p>
+        </details>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div id="skills-container">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-js"></i>
+          <i class="fab fa-react"></i>
+          <i class="fab fa-aws"></i>
+          <i class="fab fa-git"></i>
+          <i class="fab fa-npm"></i>
+          <i class="fab fa-node"></i>
+          <i class="fab fa-github"></i>
+        </div>
+      </section>
+    </main>
+
+    <footer><p>&copy; <script>document.write(new Date().getFullYear());</script> Maria Simeon-Godfrey. All Rights Reserved.</p></footer>
+  </body>
+  <script>
+    const timeContainer = document.getElementById("time-container");
+    const BIRTH_DAY = "12-10-1815";
+    const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
+    const intlNumberFormatter = new Intl.NumberFormat("en-US");
+
+    setInterval(() => {
+      const now = new Date();
+      const difference = Math.floor(
+        (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
+      );
+
+      timeContainer.innerText = intlNumberFormatter.format(difference);
+    }, 1000);
+  </script>
+</html>
