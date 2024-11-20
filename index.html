@@ -1,133 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./all.min.css" />
 
-    <script src="https://kit.fontawesome.com/446a6898ff.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <nav>
-      <h2 id="logo">Maria Simeon-Godfrey</h2>
-      <ul class="navigation-items">
-        <li class="navigation-item"><a href="#about-me">About Me</a></li>
-        <li class="navigation-item"><a href="#projects">Projects</a></li>
-        <li class="navigation-item"><a href="#skills">Skills</a></li>
-        <li class="navigation-item"><a href="/contact.html">Contact</a></li>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Maria Website</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Maria Simeon-Godfrey</h1>
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> CV</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>       
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
 
-    <main>
-      <section id="about-me">
-        <div class="about-me-container">
-          <div class="about-me-text-container">
-            <h2>About Me</h2>
-            <p>
-              Hi! I'm Maria Simeon-Godfrey, a passionate software developer with a strong focus on problem-solving 
-              and innovative solutions. I brings a wealth of experience in financial applications, enterprise integrations, 
-              and front-end development, particularly with JavaScript frameworks and libraries.
-            </p>
-            <p>
-              My dedication to my craft is evident in her ability to transform complex ideas into 
-              user-friendly applications. I am a collaborative team player, always eager to contribute to the success of my team.
-            </p>
-            <p>
-              My enthusiasm for technology is contagious, and I am constantly exploring new tools and techniques to stay ahead of the curve. 
-              I am committed to delivering high-quality software solutions that meet the needs of the clients and users.
-            </p>
-            <p>
-              Fun fact! I've been programing for
-              <span id="time-container">0</span> seconds!
-            </p>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Maria Simeon-Godfrey</h2>
+        <p>I am a <span class="typed" data-typed-items="Developer">Software Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>I enjoy solving problems using my programming skill.
+         </p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
           </div>
-          <img
-            src="images/Maria.jpg"
-            alt="A photo of Maria"
-            class="portrait"
-          />
+          <div class="col-lg-8 content">
+            <h2>Software Developer.</h2>
+            <p class="fst-italic py-3">
+                  I am a software engineer with a demonstrated history of working in the financial services industry.
+
+                  I possess skills in financial applications, enterprise Integrations to core banking system using Web APIs, and also the use of front-end Javascript frameworks/libraries.
+                  
+                  I am a team player, I  have an experience in the development of applications and customized ui interface to suit user experience and make it more appealing.
+             
+            </p>
+            <div class="row">
+             
+            </div>
+            <p class="py-3">
+              I love and enjoy what i do!
+                      </p>
+          </div>
         </div>
-      </section>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <details class="project">
-          <summary class="project-title">
-            <h3>Website Development</h3>
-          </summary>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Diagram_for_the_computation_of_Bernoulli_numbers.jpg/220px-Diagram_for_the_computation_of_Bernoulli_numbers.jpg"
-            alt="Lovelace's diagram from note G, the first published computer
-          algorithm"
-            class="project-image"
-          />
-          <p class="project-description">
-            The world's first computer program for computing Bernoulli numbers.
-          </p>
-        </details>
-        <details class="project">
-          <summary class="project-title">
-            <h3>Mixed Messages</h3>
-          </summary>
-          <img
-            src="https://images2.minutemediacdn.com/image/upload/c_fit,f_auto,fl_lossy,q_auto,w_728/v1555925585/shape/mentalfloss/analyticalmachine_babbage_london.jpg?itok=5vRTwQjb"
-            alt="An original model of part of the Analytical Engine"
-            class="project-image"
-          />
-          <p class="project-description">
-            I helped Charles Babbage on topics ranging from math to computation
-            that helped the development of the Analytical Engine.
-          </p>
-        </details>
-        <details class="project">
-          <summary class="project-title">
-            <h3>E-Learning</h3>
-          </summary>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Ada_Mascot_with_slogan.svg/220px-Ada_Mascot_with_slogan.svg.png"
-            alt='Ada mascot, a black and cobalt blue hummingbird, flying above the
-          slogan "Time-tested, safe and secure"'
-            class="project-image"
-          />
-          <p class="project-description">
-            My work inspired the United States Department of Defense to name
-            their new programming language after me.
-          </p>
-        </details>
-      </section>
+      </div>
 
-      <section id="skills">
+    </section><!-- /About Section -->
+
+   
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
         <h2>Skills</h2>
-        <div id="skills-container">
-          <i class="fab fa-html5"></i>
-          <i class="fab fa-js"></i>
-          <i class="fab fa-react"></i>
-          <i class="fab fa-aws"></i>
-          <i class="fab fa-git"></i>
-          <i class="fab fa-npm"></i>
-          <i class="fab fa-node"></i>
-          <i class="fab fa-github"></i>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+           <!-- Stats Section -->
+                <section id="stats" class="stats section">
+
+                  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="row gy-4">
+
+                      <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                          <img src="assets/img/portfolio/react.jpeg" alt="react logo" />
+                        </div>
+                      </div><!-- End Stats Item -->
+
+                      <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                          <img src="assets/img/portfolio/php.jpeg" alt="php logo"/>
+                        </div>
+                      </div><!-- End Stats Item -->
+
+                      <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                          <img src="assets/img/portfolio/html.jpeg" alt="html5 logo"/>
+                        </div>
+                      </div><!-- End Stats Item -->
+
+                      <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                          <img src="assets/img/portfolio/css.jpeg" alt="css logo"/>
+                        </div>
+                      </div><!-- End Stats Item -->
+
+                    </div>
+
+                    <div class="row gy-4">
+
+                      <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                          <img src="assets/img/portfolio/boostrap.jpeg" alt="boostrap logo" height="100" />
+                        </div>
+                      </div><!-- End Stats Item -->
+
+                      <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                          <img src="assets/img/portfolio/jquery.jpeg" alt="jquery logo" height="100"/>
+                        </div>
+                      </div><!-- End Stats Item -->
+
+                      <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                          <img src="assets/img/portfolio/python.jpeg" alt="python logo" height="100"/>
+                        </div>
+                      </div><!-- End Stats Item -->
+
+                      <div class="col-lg-3 col-md-6">
+                        <div class="stats-item">
+                          <img src="assets/img/portfolio/postgres.jpeg" alt="postgres logo" height="100"/>
+                        </div>
+                      </div><!-- End Stats Item -->
+
+                    </div>
+                  
+                  </div>
+                
+                </section><!-- /Stats Section -->
+
         </div>
-      </section>
-    </main>
 
-    <footer><p>&copy; <script>document.write(new Date().getFullYear());</script> Maria Simeon-Godfrey. All Rights Reserved.</p></footer>
-  </body>
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>I am an energetic and enthusiastic female software engineer. I am also an enthusiastic team player and creative thinker who has taken part in several substantial projects from initiation to successful completion.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Summary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Maria Simeon-Godfrey</h4>
+              <p><em>I am an Innovative and deadline-driven developer with over 3+ years of experience developing application from initial concept to final.</em></p>
+              <ul>
+                <li>Leeds,West Yorkshire, FL</li>
+                <li>07776651976</li>
+                <li>m4mariaoni@yahoo.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master, Advanced Computer Science</h4>
+              <h5>2022 - 2023</h5>
+              <p><em>Leeds Beckett Univeristy, UK</em></p>
+              <p>Distinction</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>BSc, Computer Science</h4>
+              <h5>2007 - 2010</h5>
+              <p><em>University of Ibadan, NG</em></p>
+              <p>Second Class Upper</p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Application Software Developer</h4>
+              <h5>2020 - 2024</h5>
+              <p><em>Inlaks, NG </em></p>
+              <ul>
+                <li>Development and Supporting of Electronic Fund Transfer Application using Asp.net C# and Sql Server</li>
+                <li>Development and Supporting of E-Learning Solution using Asp.net C# and Sql Server</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>IT Support Developer</h4>
+              <h5>2017 - 2019</h5>
+              <p><em>Diamondbank, NG</em></p>
+              <ul>
+                <li>Supporting Enterprise Applications </li>
+                <li>Running of Sql Queries and working with Oracle database </li>
+                <li>Working with project managers to understand business requirements</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Web Developer</h4>
+              <h5>2011 - 2017</h5>
+              <p><em>Rightclick, NG</em></p>
+              <ul>
+                <li>Managing websites using joomla and wordpress content management system</li>
+                <li>Managing and Supporting customers request</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+       
+
+        <a href="forms/MariaCV.pdf" download="MariaCV.pdf" class="btn btn-secondary col-lg-3">
+            Download CV
+          </a> 
+ 
+          
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+          
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <a href="#" 
+                   data-bs-toggle="modal" 
+                   data-bs-target="#dynamicModal" 
+                   data-title="Mixed Message" 
+                   data-image="assets/img/portfolio/mixedmessage.png" 
+                   data-description="Every time a user runs this program, they will get a randomized message output." 
+                   data-description2="Tech Stack: Front End"
+                   data-link="https://github.com/m4mariaoni/mixed-message">
+                  <img src="assets/img/portfolio/mixedmessage.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Mixed Message</h4>
+                    <p>Every time a user runs this program, they will get a randomized message output.</p>
+                  </div>
+                </a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <a href="#" 
+                   data-bs-toggle="modal" 
+                   data-bs-target="#dynamicModal" 
+                   data-title="Website" 
+                   data-image="assets/img/portfolio/website.png" 
+                   data-description="Personal Website" 
+                   data-description2="Tech Stack: Front End"
+                   data-link="https://github.com/m4mariaoni/personal-portfolio-website">
+                  <img src="assets/img/portfolio/website.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Website</h4>
+                    <p>Personal Website</p>  
+                  </div>
+                </a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <a href="#" 
+                   data-bs-toggle="modal" 
+                   data-bs-target="#dynamicModal" 
+                   data-title="E-commerce API" 
+                   data-image="assets/img/portfolio/ecommerceapi.png" 
+                   data-description="E-commerce API" 
+                   data-description2="Tech Stack: Back End"
+                   data-link="https://github.com/m4mariaoni/ecommerce">
+                  <img src="assets/img/portfolio/ecommerceapi.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>E-commerce API</h4>
+                    <p>An e-commerce application REST API using server-side web development. </p>        
+                  </div>
+                </a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <a href="#" 
+                   data-bs-toggle="modal" 
+                   data-bs-target="#dynamicModal" 
+                   data-title="Reddit" 
+                   data-image="assets/img/portfolio/reddit.png" 
+                   data-description="E-commerce API" 
+                   data-description2="Tech Stack: Front End and Back End"
+                   data-link="https://github.com/m4mariaoni/reddit">
+                  <img src="assets/img/portfolio/reddit.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Reddit</h4>
+                    <p>An application for Reddit where people share links to articles, media and other things on web.</p> 
+                  </div>
+                </a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <a href="#" 
+                   data-bs-toggle="modal" 
+                   data-bs-target="#dynamicModal" 
+                   data-title="E-Learning" 
+                   data-image="assets/img/portfolio/skilldorm.png" 
+                   data-description="An E-learning application." 
+                   data-description2="Tech Stack: Front End and Back End"
+                   data-link="https://www.skilldorm.com">
+                  <img src="assets/img/portfolio/skilldorm.png" class="img-fluid" alt="skilldorm image">
+                  <div class="portfolio-info">
+                    <h4>Reddit</h4>
+                    <p>An application for Reddit where people share links to articles, media and other things on web.</p> 
+                  </div>
+                </a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!--Modal Section-->
+<div class="modal fade" id="dynamicModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle"></h5>
+      </div>
+      <div class="modal-body">
+        <img id="modalImage" src="" class="img-fluid" alt="">
+        <p id="modalDescription"></p>
+        <p id="modalDescription2"></p>
+        <a id="modalLink" href="#" target="_blank">GitHub</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!--End Modal Section-->
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+       
+
+
+          <div class="col-lg-12">
+            <!-- <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200"> -->
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <span>All Rights Reserved</span></p>
+      </div>
+    </div>
+
+  </footer>
+  
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
   <script>
-    const timeContainer = document.getElementById("time-container");
-    const BIRTH_DAY = "12-10-1815";
-    const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
-    const intlNumberFormatter = new Intl.NumberFormat("en-US");
-
-    setInterval(() => {
-      const now = new Date();
-      const difference = Math.floor(
-        (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
-      );
-
-      timeContainer.innerText = intlNumberFormatter.format(difference);
-    }, 1000);
+    document.addEventListener('DOMContentLoaded', function() {
+  const dynamicModal = document.getElementById('dynamicModal');
+  dynamicModal.addEventListener('show.bs.modal', function(event) {
+    const button = event.relatedTarget;
+    
+    // Get data attributes from the clicked item
+    const title = button.getAttribute('data-title');
+    const image = button.getAttribute('data-image');
+    const description = button.getAttribute('data-description');
+    const description2 = button.getAttribute('data-description2');
+    const link = button.getAttribute('data-link');
+    
+    // Update modal content
+    dynamicModal.querySelector('.modal-title').textContent = title;
+    dynamicModal.querySelector('#modalImage').src = image;
+    dynamicModal.querySelector('#modalDescription').textContent = description;
+    dynamicModal.querySelector('#modalDescription2').textContent = description2;
+    dynamicModal.querySelector('#modalLink').href = link;
+  });
+});
   </script>
+</body>
+
 </html>
