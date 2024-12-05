@@ -78,7 +78,9 @@
 
   function displayError(thisForm, error) {
     thisForm.querySelector('.loading').classList.remove('d-block');
-    thisForm.querySelector('.error-message').innerHTML = error;
+    let errorMessage = error.toString().replace(/^Error:\s*/, "").trim();
+    //thisForm.querySelector('.error-message').innerHTML = error;
+    thisForm.querySelector('.error-message').innerHTML = errorMessage;
     thisForm.querySelector('.error-message').classList.add('d-block');
   }
 
